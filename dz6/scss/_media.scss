@@ -1,0 +1,134 @@
+@media (max-width: 1140px) {
+    .top {
+        gap: 40px;
+
+        &__photo {
+            margin-left: -150px;
+            width: 600px;
+        }
+    }
+
+    .offer {
+        &__box {
+            display: grid;
+            grid-template-columns: repeat(3, mminmax(232px, 360px));
+            gap: 20px;
+        }
+    }
+
+    .product-info {
+        &__wrap-blok {
+            padding: 65px 235px;
+        }
+    }
+
+    .product {
+        &__view {
+            display: none;
+        }
+    }
+
+    .feature {
+        &__box {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .center {
+        padding-left: calc(50% - (768px - 16px) / 2);
+        padding-right: calc(50% - (768px - 16px) / 2);
+    }
+
+    .top {
+        justify-content: space-between;
+        gap: 40px;
+
+        &__photo {
+            margin-left: -30px;
+            width: 385px;
+        }
+
+        &__title {
+            font-size: 44px;
+        }
+
+        &__text-title {
+            font-size: 24px;
+        }
+    }
+
+    .offer {
+        margin-top: 20px;
+        margin-bottom: 155px;
+
+        // &__box {}
+    }
+
+    .product-info {
+        &__wrap-blok {
+            padding: 65px 106px;
+        }
+    }
+
+    .add-products {
+        flex-direction: column;
+        gap: 64px;
+
+        &__info {
+            @include flexBetween;
+        }
+    }
+
+    .add-product {
+        &__button {
+            @include centerFlex;
+            gap: 48px;
+        }
+    }
+
+    .reg-form {
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .products {
+        &__text {
+            margin-bottom: 73px;
+        }
+    }
+
+    .product {
+        &__box {
+            gap: 16px;
+        }
+    }
+
+    .feature {
+        padding-top: 48px;
+        padding-bottom: 64px;
+
+        &__box {
+            gap: 48px;
+        }
+    }
+
+    .frame {
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 53px;
+        padding-bottom: 146px;
+    }
+
+    .sort {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .slider {
+        &__img-product {
+            max-width: 454px
+        }
+    }
+}
